@@ -8,8 +8,42 @@
 import SwiftUI
 
 struct LogsView: View {
+    @State private var viewModel: LogsViewModel = Model()
+
     var body: some View {
-        Text("Logs")
+        VStack {
+            HStack {
+                Text("All logs").font(.title)
+
+                Spacer()
+
+                Button(
+                    action: { print("Download file") },
+                    label: {
+                        Image(systemName: "arrow.down.circle")
+                            .foregroundColor(.gray)
+                    }
+                )
+            }
+            .padding(.horizontal)
+
+            List(viewModel.events, id: \.name) { event in
+                VStack(alignment: .leading) {
+                    Text(event.name)
+                    Text("\(event.timestamp)")
+                }
+            }.onAppear {
+                loadEvents()
+            }
+        }
+    }
+}
+
+extension LogsView {
+    func loadEvents() {
+        Task {
+            await viewModel.loadEvents()
+        }
     }
 }
 

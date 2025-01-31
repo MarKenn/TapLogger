@@ -22,6 +22,7 @@
 		EFC9AF7C2D4D3CED00E90D5C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AF7B2D4D3CED00E90D5C /* Constant.swift */; };
 		EFC9AF7E2D4D3D7200E90D5C /* LogError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AF7D2D4D3D7200E90D5C /* LogError.swift */; };
 		EFC9AF802D4D41DF00E90D5C /* InFileTapRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AF7F2D4D41DF00E90D5C /* InFileTapRepository.swift */; };
+		EFC9AF852D4D6AFD00E90D5C /* LogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AF842D4D6AF400E90D5C /* LogsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		EFC9AF7B2D4D3CED00E90D5C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		EFC9AF7D2D4D3D7200E90D5C /* LogError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogError.swift; sourceTree = "<group>"; };
 		EFC9AF7F2D4D41DF00E90D5C /* InFileTapRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InFileTapRepository.swift; sourceTree = "<group>"; };
+		EFC9AF842D4D6AF400E90D5C /* LogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		EFC9AF682D4D2BBC00E90D5C /* Logs */ = {
 			isa = PBXGroup;
 			children = (
+				EFC9AF842D4D6AF400E90D5C /* LogsViewModel.swift */,
 				EFC9AF662D4D2BB500E90D5C /* LogsView.swift */,
 			);
 			path = Logs;
@@ -303,6 +306,7 @@
 				EFC9AF772D4D3C4500E90D5C /* Event.swift in Sources */,
 				EFC9AF6B2D4D30D100E90D5C /* ButtonView.swift in Sources */,
 				EFC9AF7E2D4D3D7200E90D5C /* LogError.swift in Sources */,
+				EFC9AF852D4D6AFD00E90D5C /* LogsViewModel.swift in Sources */,
 				EFBB92B12D4AC4F60081CEA5 /* ContentView.swift in Sources */,
 				EFC9AF7C2D4D3CED00E90D5C /* Constant.swift in Sources */,
 				EFC9AF802D4D41DF00E90D5C /* InFileTapRepository.swift in Sources */,
