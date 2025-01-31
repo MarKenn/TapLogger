@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selectedTab: Tab = .taps
+
+    enum Tab {
+        case taps
+        case logs
+    }
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        TabView(selection: $selectedTab) {
+            TapsView()
+                .tabItem {
+                    Label("Taps", systemImage: "hand.tap")
+                }
+                .tag(Tab.taps)
+
+            LogsView()
+                .tabItem {
+                    Label("Logs", systemImage: "list.bullet")
+                }
+                .tag(Tab.logs)
+        }.tint(.teal)
     }
 }
 

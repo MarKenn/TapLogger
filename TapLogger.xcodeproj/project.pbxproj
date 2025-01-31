@@ -12,6 +12,16 @@
 		EFBB92B32D4AC4F60081CEA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFBB92AB2D4AC4F60081CEA5 /* Preview Assets.xcassets */; };
 		EFBB92B42D4AC4F60081CEA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFBB92AD2D4AC4F60081CEA5 /* Assets.xcassets */; };
 		EFBB92B72D4AC4F90081CEA5 /* TapLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB92B52D4AC4F90081CEA5 /* TapLoggerTests.swift */; };
+		EFC9AF652D4D2B9B00E90D5C /* TapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AF642D4D2B9B00E90D5C /* TapsView.swift */; };
+		EFC9AF672D4D2BB500E90D5C /* LogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AF662D4D2BB500E90D5C /* LogsView.swift */; };
+		EFC9AF6B2D4D30D100E90D5C /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AF6A2D4D30D100E90D5C /* ButtonView.swift */; };
+		EFC9AF6D2D4D390800E90D5C /* TapsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AF6C2D4D390800E90D5C /* TapsViewModel.swift */; };
+		EFC9AF722D4D3A3000E90D5C /* LogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AF712D4D3A2B00E90D5C /* LogService.swift */; };
+		EFC9AF742D4D3B5E00E90D5C /* LogOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AF732D4D3B5600E90D5C /* LogOperation.swift */; };
+		EFC9AF772D4D3C4500E90D5C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AF762D4D3C1E00E90D5C /* Event.swift */; };
+		EFC9AF7C2D4D3CED00E90D5C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AF7B2D4D3CED00E90D5C /* Constant.swift */; };
+		EFC9AF7E2D4D3D7200E90D5C /* LogError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AF7D2D4D3D7200E90D5C /* LogError.swift */; };
+		EFC9AF802D4D41DF00E90D5C /* InFileTapRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AF7F2D4D41DF00E90D5C /* InFileTapRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +42,16 @@
 		EFBB92AE2D4AC4F60081CEA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EFBB92AF2D4AC4F60081CEA5 /* TapLoggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapLoggerApp.swift; sourceTree = "<group>"; };
 		EFBB92B52D4AC4F90081CEA5 /* TapLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapLoggerTests.swift; sourceTree = "<group>"; };
+		EFC9AF642D4D2B9B00E90D5C /* TapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapsView.swift; sourceTree = "<group>"; };
+		EFC9AF662D4D2BB500E90D5C /* LogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsView.swift; sourceTree = "<group>"; };
+		EFC9AF6A2D4D30D100E90D5C /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		EFC9AF6C2D4D390800E90D5C /* TapsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapsViewModel.swift; sourceTree = "<group>"; };
+		EFC9AF712D4D3A2B00E90D5C /* LogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogService.swift; sourceTree = "<group>"; };
+		EFC9AF732D4D3B5600E90D5C /* LogOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOperation.swift; sourceTree = "<group>"; };
+		EFC9AF762D4D3C1E00E90D5C /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		EFC9AF7B2D4D3CED00E90D5C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		EFC9AF7D2D4D3D7200E90D5C /* LogError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogError.swift; sourceTree = "<group>"; };
+		EFC9AF7F2D4D41DF00E90D5C /* InFileTapRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InFileTapRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +102,12 @@
 			isa = PBXGroup;
 			children = (
 				EFBB92AC2D4AC4F60081CEA5 /* Preview Content */,
-				EFBB92AD2D4AC4F60081CEA5 /* Assets.xcassets */,
+				EFC9AF782D4D3CC300E90D5C /* Common */,
+				EFC9AF752D4D3C0700E90D5C /* Models */,
+				EFC9AF6F2D4D39D000E90D5C /* Services */,
+				EFC9AF692D4D30A900E90D5C /* Views */,
+				EFC9AF622D4D2A9B00E90D5C /* Modules */,
 				EFBB92AE2D4AC4F60081CEA5 /* ContentView.swift */,
-				EFBB92AF2D4AC4F60081CEA5 /* TapLoggerApp.swift */,
 			);
 			path = TapLogger;
 			sourceTree = "<group>";
@@ -95,6 +118,77 @@
 				EFBB92B52D4AC4F90081CEA5 /* TapLoggerTests.swift */,
 			);
 			path = TapLoggerTests;
+			sourceTree = "<group>";
+		};
+		EFC9AF622D4D2A9B00E90D5C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EFC9AF682D4D2BBC00E90D5C /* Logs */,
+				EFC9AF632D4D2AA400E90D5C /* Taps */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EFC9AF632D4D2AA400E90D5C /* Taps */ = {
+			isa = PBXGroup;
+			children = (
+				EFC9AF7F2D4D41DF00E90D5C /* InFileTapRepository.swift */,
+				EFC9AF642D4D2B9B00E90D5C /* TapsView.swift */,
+				EFC9AF6C2D4D390800E90D5C /* TapsViewModel.swift */,
+			);
+			path = Taps;
+			sourceTree = "<group>";
+		};
+		EFC9AF682D4D2BBC00E90D5C /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				EFC9AF662D4D2BB500E90D5C /* LogsView.swift */,
+			);
+			path = Logs;
+			sourceTree = "<group>";
+		};
+		EFC9AF692D4D30A900E90D5C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFC9AF6A2D4D30D100E90D5C /* ButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EFC9AF6F2D4D39D000E90D5C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EFC9AF702D4D39DA00E90D5C /* LogService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EFC9AF702D4D39DA00E90D5C /* LogService */ = {
+			isa = PBXGroup;
+			children = (
+				EFC9AF7D2D4D3D7200E90D5C /* LogError.swift */,
+				EFC9AF732D4D3B5600E90D5C /* LogOperation.swift */,
+				EFC9AF712D4D3A2B00E90D5C /* LogService.swift */,
+			);
+			path = LogService;
+			sourceTree = "<group>";
+		};
+		EFC9AF752D4D3C0700E90D5C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EFC9AF762D4D3C1E00E90D5C /* Event.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EFC9AF782D4D3CC300E90D5C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EFC9AF7B2D4D3CED00E90D5C /* Constant.swift */,
+				EFBB92AD2D4AC4F60081CEA5 /* Assets.xcassets */,
+				EFBB92AF2D4AC4F60081CEA5 /* TapLoggerApp.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +296,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC9AF742D4D3B5E00E90D5C /* LogOperation.swift in Sources */,
+				EFC9AF652D4D2B9B00E90D5C /* TapsView.swift in Sources */,
+				EFC9AF672D4D2BB500E90D5C /* LogsView.swift in Sources */,
+				EFC9AF6D2D4D390800E90D5C /* TapsViewModel.swift in Sources */,
+				EFC9AF772D4D3C4500E90D5C /* Event.swift in Sources */,
+				EFC9AF6B2D4D30D100E90D5C /* ButtonView.swift in Sources */,
+				EFC9AF7E2D4D3D7200E90D5C /* LogError.swift in Sources */,
 				EFBB92B12D4AC4F60081CEA5 /* ContentView.swift in Sources */,
+				EFC9AF7C2D4D3CED00E90D5C /* Constant.swift in Sources */,
+				EFC9AF802D4D41DF00E90D5C /* InFileTapRepository.swift in Sources */,
+				EFC9AF722D4D3A3000E90D5C /* LogService.swift in Sources */,
 				EFBB92B22D4AC4F60081CEA5 /* TapLoggerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
