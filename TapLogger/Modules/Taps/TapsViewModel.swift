@@ -10,7 +10,6 @@ import Foundation
 protocol TapsViewModel {
     var repository: TapRepository { get set }
     var events: [Event] { get set }
-    var eventConsoleLogs: [String] { get set }
 
     func logEvent(_ name: String, timestamp: Date) async
 }
@@ -19,13 +18,7 @@ extension TapsView {
     @Observable
     class Model: TapsViewModel {
         var repository: TapRepository
-        var events: [Event] = [] {
-            didSet {
-                print(events)
-                eventConsoleLogs = events.map { $0.log }
-            }
-        }
-        var eventConsoleLogs: [String] = []
+        var events: [Event] = []
 
         init(repository: TapRepository =  InFileTapRepository()) {
             self.repository = repository

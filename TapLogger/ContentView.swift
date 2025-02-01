@@ -28,7 +28,13 @@ struct ContentView: View {
                     Label("Logs", systemImage: "list.bullet")
                 }
                 .tag(Tab.logs)
-        }.tint(.teal)
+        }
+        .tint(.teal)
+        .onAppear {
+            let tabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.configureWithOpaqueBackground()
+            UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+        }
     }
 }
 

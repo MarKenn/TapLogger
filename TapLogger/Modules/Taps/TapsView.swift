@@ -24,22 +24,29 @@ struct TapsView: View {
             .cornerRadius(10)
 
             VStack {
-                Text("Session console").foregroundStyle(.teal)
+                VStack {
+                    Text("Session console")
+                        .foregroundStyle(.white)
+                        .padding(.vertical, 8)
+                }
+                .frame(maxWidth: .infinity)
+                .background(.teal)
 
                 ScrollView {
-                    ForEach(viewModel.eventConsoleLogs, id: \.self) { log in
-                        Text(log)
+                    ForEach(viewModel.events, id: \.compositeId) { event in
+                        Text(event.log)
+                            .font(.caption)
                             .foregroundStyle(.green)
                             .frame(maxWidth: .infinity, alignment: .leading)
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(8)
 
             }
-            .padding(.vertical)
-            .padding(.horizontal, 8)
             .background(.black)
             .frame(height: 200)
+            .cornerRadius(10)
         }
         .padding(.horizontal, 20)
     }

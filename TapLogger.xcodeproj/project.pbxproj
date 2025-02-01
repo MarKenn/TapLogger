@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF7A8B6F2D4DD4EA00A8FB16 /* EventLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A8B6E2D4DD4EA00A8FB16 /* EventLogView.swift */; };
+		EF7A8B782D4DE66500A8FB16 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A8B772D4DE66100A8FB16 /* DateFormatter.swift */; };
 		EFBB92B12D4AC4F60081CEA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB92AE2D4AC4F60081CEA5 /* ContentView.swift */; };
 		EFBB92B22D4AC4F60081CEA5 /* TapLoggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB92AF2D4AC4F60081CEA5 /* TapLoggerApp.swift */; };
 		EFBB92B32D4AC4F60081CEA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFBB92AB2D4AC4F60081CEA5 /* Preview Assets.xcassets */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		EF79CE192D4AC4BD0073BFE4 /* TapLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF79CE292D4AC4BF0073BFE4 /* TapLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7A8B6E2D4DD4EA00A8FB16 /* EventLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLogView.swift; sourceTree = "<group>"; };
+		EF7A8B772D4DE66100A8FB16 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		EFBB92AB2D4AC4F60081CEA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EFBB92AD2D4AC4F60081CEA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFBB92AE2D4AC4F60081CEA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +96,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		EF7A8B762D4DE65600A8FB16 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A8B772D4DE66100A8FB16 /* DateFormatter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		EFBB92AC2D4AC4F60081CEA5 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +115,7 @@
 		EFBB92B02D4AC4F60081CEA5 /* TapLogger */ = {
 			isa = PBXGroup;
 			children = (
+				EF7A8B762D4DE65600A8FB16 /* Helpers */,
 				EFBB92AC2D4AC4F60081CEA5 /* Preview Content */,
 				EFC9AF782D4D3CC300E90D5C /* Common */,
 				EFC9AF752D4D3C0700E90D5C /* Models */,
@@ -154,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				EFC9AF6A2D4D30D100E90D5C /* ButtonView.swift */,
+				EF7A8B6E2D4DD4EA00A8FB16 /* EventLogView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -307,6 +321,8 @@
 				EFC9AF6B2D4D30D100E90D5C /* ButtonView.swift in Sources */,
 				EFC9AF7E2D4D3D7200E90D5C /* LogError.swift in Sources */,
 				EFC9AF852D4D6AFD00E90D5C /* LogsViewModel.swift in Sources */,
+				EF7A8B6F2D4DD4EA00A8FB16 /* EventLogView.swift in Sources */,
+				EF7A8B782D4DE66500A8FB16 /* DateFormatter.swift in Sources */,
 				EFBB92B12D4AC4F60081CEA5 /* ContentView.swift in Sources */,
 				EFC9AF7C2D4D3CED00E90D5C /* Constant.swift in Sources */,
 				EFC9AF802D4D41DF00E90D5C /* InFileTapRepository.swift in Sources */,
