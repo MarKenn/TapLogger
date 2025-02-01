@@ -5,8 +5,9 @@
 //  Created by Mark Kenneth Bayona on 2/1/25.
 //
 
-
 protocol TapRepository {
+    var logProvider: LogProvider { get set }
+
     func write(_ event: Event) async -> Result<Event, Error>
     func read() async -> Result<[Event], Error>
 }

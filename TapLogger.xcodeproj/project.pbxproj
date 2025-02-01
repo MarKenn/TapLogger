@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		EF7A8B6F2D4DD4EA00A8FB16 /* EventLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A8B6E2D4DD4EA00A8FB16 /* EventLogView.swift */; };
 		EF7A8B782D4DE66500A8FB16 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A8B772D4DE66100A8FB16 /* DateFormatter.swift */; };
+		EF7A8B7B2D4E1A0600A8FB16 /* TapsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A8B7A2D4E19FE00A8FB16 /* TapsViewModelTests.swift */; };
+		EF7A8B7E2D4E1A6E00A8FB16 /* MockTapRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A8B7D2D4E1A6800A8FB16 /* MockTapRepository.swift */; };
+		EF7A8B802D4E1C0F00A8FB16 /*  MockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A8B7F2D4E1C0900A8FB16 /*  MockError.swift */; };
+		EF7A8B842D4E47E200A8FB16 /* LogsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A8B832D4E47D600A8FB16 /* LogsViewModelTests.swift */; };
+		EF7A8B862D4E48B900A8FB16 /* MockLogProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A8B852D4E48B000A8FB16 /* MockLogProvider.swift */; };
+		EF7A8B892D4E526100A8FB16 /* InFileTapRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A8B882D4E524F00A8FB16 /* InFileTapRepositoryTests.swift */; };
 		EFBB92B12D4AC4F60081CEA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB92AE2D4AC4F60081CEA5 /* ContentView.swift */; };
 		EFBB92B22D4AC4F60081CEA5 /* TapLoggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB92AF2D4AC4F60081CEA5 /* TapLoggerApp.swift */; };
 		EFBB92B32D4AC4F60081CEA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFBB92AB2D4AC4F60081CEA5 /* Preview Assets.xcassets */; };
 		EFBB92B42D4AC4F60081CEA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFBB92AD2D4AC4F60081CEA5 /* Assets.xcassets */; };
-		EFBB92B72D4AC4F90081CEA5 /* TapLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB92B52D4AC4F90081CEA5 /* TapLoggerTests.swift */; };
 		EFC9AF652D4D2B9B00E90D5C /* TapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AF642D4D2B9B00E90D5C /* TapsView.swift */; };
 		EFC9AF672D4D2BB500E90D5C /* LogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AF662D4D2BB500E90D5C /* LogsView.swift */; };
 		EFC9AF6B2D4D30D100E90D5C /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AF6A2D4D30D100E90D5C /* ButtonView.swift */; };
@@ -42,11 +47,17 @@
 		EF79CE292D4AC4BF0073BFE4 /* TapLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF7A8B6E2D4DD4EA00A8FB16 /* EventLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLogView.swift; sourceTree = "<group>"; };
 		EF7A8B772D4DE66100A8FB16 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		EF7A8B7A2D4E19FE00A8FB16 /* TapsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapsViewModelTests.swift; sourceTree = "<group>"; };
+		EF7A8B7D2D4E1A6800A8FB16 /* MockTapRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTapRepository.swift; sourceTree = "<group>"; };
+		EF7A8B7F2D4E1C0900A8FB16 /*  MockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " MockError.swift"; sourceTree = "<group>"; };
+		EF7A8B832D4E47D600A8FB16 /* LogsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsViewModelTests.swift; sourceTree = "<group>"; };
+		EF7A8B852D4E48B000A8FB16 /* MockLogProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLogProvider.swift; sourceTree = "<group>"; };
+		EF7A8B872D4E506E00A8FB16 /* TapLoggerTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TapLoggerTests.xctestplan; sourceTree = "<group>"; };
+		EF7A8B882D4E524F00A8FB16 /* InFileTapRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InFileTapRepositoryTests.swift; sourceTree = "<group>"; };
 		EFBB92AB2D4AC4F60081CEA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EFBB92AD2D4AC4F60081CEA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFBB92AE2D4AC4F60081CEA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EFBB92AF2D4AC4F60081CEA5 /* TapLoggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapLoggerApp.swift; sourceTree = "<group>"; };
-		EFBB92B52D4AC4F90081CEA5 /* TapLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapLoggerTests.swift; sourceTree = "<group>"; };
 		EFC9AF642D4D2B9B00E90D5C /* TapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapsView.swift; sourceTree = "<group>"; };
 		EFC9AF662D4D2BB500E90D5C /* LogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsView.swift; sourceTree = "<group>"; };
 		EFC9AF6A2D4D30D100E90D5C /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
@@ -104,6 +115,42 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		EF7A8B792D4E19F500A8FB16 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A8B822D4E47A300A8FB16 /* Logs */,
+				EF7A8B812D4E476600A8FB16 /* Taps */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EF7A8B7C2D4E1A6000A8FB16 /* Common Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A8B852D4E48B000A8FB16 /* MockLogProvider.swift */,
+				EF7A8B7F2D4E1C0900A8FB16 /*  MockError.swift */,
+				EF7A8B7D2D4E1A6800A8FB16 /* MockTapRepository.swift */,
+			);
+			path = "Common Mocks";
+			sourceTree = "<group>";
+		};
+		EF7A8B812D4E476600A8FB16 /* Taps */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A8B882D4E524F00A8FB16 /* InFileTapRepositoryTests.swift */,
+				EF7A8B7A2D4E19FE00A8FB16 /* TapsViewModelTests.swift */,
+			);
+			path = Taps;
+			sourceTree = "<group>";
+		};
+		EF7A8B822D4E47A300A8FB16 /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A8B832D4E47D600A8FB16 /* LogsViewModelTests.swift */,
+			);
+			path = Logs;
+			sourceTree = "<group>";
+		};
 		EFBB92AC2D4AC4F60081CEA5 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,7 +177,9 @@
 		EFBB92B62D4AC4F90081CEA5 /* TapLoggerTests */ = {
 			isa = PBXGroup;
 			children = (
-				EFBB92B52D4AC4F90081CEA5 /* TapLoggerTests.swift */,
+				EF7A8B872D4E506E00A8FB16 /* TapLoggerTests.xctestplan */,
+				EF7A8B7C2D4E1A6000A8FB16 /* Common Mocks */,
+				EF7A8B792D4E19F500A8FB16 /* Modules */,
 			);
 			path = TapLoggerTests;
 			sourceTree = "<group>";
@@ -335,7 +384,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFBB92B72D4AC4F90081CEA5 /* TapLoggerTests.swift in Sources */,
+				EF7A8B862D4E48B900A8FB16 /* MockLogProvider.swift in Sources */,
+				EF7A8B7B2D4E1A0600A8FB16 /* TapsViewModelTests.swift in Sources */,
+				EF7A8B7E2D4E1A6E00A8FB16 /* MockTapRepository.swift in Sources */,
+				EF7A8B802D4E1C0F00A8FB16 /*  MockError.swift in Sources */,
+				EF7A8B892D4E526100A8FB16 /* InFileTapRepositoryTests.swift in Sources */,
+				EF7A8B842D4E47E200A8FB16 /* LogsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

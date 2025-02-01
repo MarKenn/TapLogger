@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "4A298960-CF64-43A5-BAA5-1A95AE4617A5",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:TapLogger.xcodeproj",
+        "identifier" : "EF79CE282D4AC4BF0073BFE4",
+        "name" : "TapLoggerTests"
+      }
+    }
+  ],
+  "version" : 1
+}

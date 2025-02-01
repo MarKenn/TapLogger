@@ -12,7 +12,7 @@ protocol LogProvider {
 }
 
 struct LogService: LogProvider {
-    func load<ModelType>(_ operation: LogOperation) async -> Result<ModelType, any Error> where ModelType : Decodable, ModelType : Encodable {
+    func load<ModelType: Codable>(_ operation: LogOperation) async -> Result<ModelType, Error> {
         var response: Result<ModelType, Error>
         switch operation {
         case .read:
