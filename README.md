@@ -28,6 +28,6 @@ I initially thought of using CoreData for the database/storage solution, but sin
 
 |  |  | 
 | --- | --- |
-| ![Simulator Screenshot - iPhone 16 - 2025-02-01 at 22 32 55](https://github.com/user-attachments/assets/d0a0260f-5971-408a-8dcf-2a54f65a0f1a) | <video src="[https://user-images.githubusercontent.com/13440061/129455220-23fa27a2-c8f0-4953-b291-b4893959d5d9.mp4](https://github.com/user-attachments/assets/522b3659-6bab-4fb6-ac41-77bf2086a0f8)"> |
+| <img src="https://github.com/user-attachments/assets/d0a0260f-5971-408a-8dcf-2a54f65a0f1a" width="478.5"> | <video src="https://github.com/user-attachments/assets/522b3659-6bab-4fb6-ac41-77bf2086a0f8" width="200"> |
 
 
