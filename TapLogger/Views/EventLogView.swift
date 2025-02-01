@@ -13,18 +13,27 @@ struct EventLogView: View {
     let compositeId: String
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text("Event name: \(name)")
-                .font(.callout)
-                .fontWeight(.bold)
-                .foregroundStyle(.teal)
-            Divider()
+        VStack(alignment: .leading) {
+            VStack {
+                Text("Event name: \(name)")
+                    .font(.callout)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.white)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.horizontal)
+            .padding(.vertical, 8)
+            .background(.accent)
+
             Text("Timestamp: \(date)")
                 .font(.footnote)
+                .padding(.horizontal)
+                .padding(.top, 4)
+                .padding(.bottom, 12)
+
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding()
-        .background(.white)
+        .background(.secondaryBackground)
         .cornerRadius(10)
     }
 }

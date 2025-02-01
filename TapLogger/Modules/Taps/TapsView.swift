@@ -30,7 +30,7 @@ struct TapsView: View {
                         .padding(.vertical, 8)
                 }
                 .frame(maxWidth: .infinity)
-                .background(.teal)
+                .background(.accent)
 
                 ScrollView {
                     ForEach(viewModel.events, id: \.compositeId) { event in
@@ -44,9 +44,13 @@ struct TapsView: View {
                 .padding(8)
 
             }
-            .background(.black)
+            .background(.consoleBackground)
             .frame(height: 200)
             .cornerRadius(10)
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(.gray, lineWidth: 1)
+            )
         }
         .padding(.horizontal, 20)
     }

@@ -11,7 +11,7 @@ enum LogOperation {
     case write(Event)
     case read
 
-    var url: URL { Constant.apiBaseURL.appendingPathComponent("events.json") }
+    var url: URL { Constant.jsonFileStorage }
 
     var body: (any Codable)? {
         switch self {

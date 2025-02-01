@@ -19,7 +19,7 @@ struct ButtonView: View {
                 .foregroundColor(.white)
                 .padding()
                 .frame(maxWidth: .infinity)
-                .background(.teal)
+                .background(.accent)
                 .shadow(radius: 5)
         }
     }

@@ -24,10 +24,12 @@ struct LogsView: View {
                 Spacer()
 
                 Button(
-                    action: { print("Download file") },
+                    action: { exportLogFile() },
                     label: {
                         Image(systemName: "arrow.down.circle")
-                            .foregroundColor(.teal)
+                            .resizable()
+                            .frame(maxWidth: 30, maxHeight: 30)
+                            .foregroundColor(.accentColor)
                     }
                 )
             }
@@ -44,7 +46,8 @@ struct LogsView: View {
                 }
                 .padding()
             }
-            .background(Color(.systemGroupedBackground))
+            .frame(maxWidth: .infinity)
+            .background(.listBackground)
             .onAppear {
                 loadEvents()
             }
@@ -56,6 +59,20 @@ extension LogsView {
     func loadEvents() {
         Task {
             await viewModel.loadEvents()
+        }
+    }
+
+    func exportLogFile() {
+        if FileManager.default.fileExists(atPath: Constant.jsonFileStorage.path()) {
+            let controller = UIDocumentPickerViewController(
+                forExporting: [Constant.jsonFileStorage],
+                asCopy: true)
+            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+               let rootVC = windowScene.windows.first?.rootViewController {
+                rootVC.present(controller, animated: true, completion: nil)
+            }
+        } else {
+            print("File does not exist.")
         }
     }
 }

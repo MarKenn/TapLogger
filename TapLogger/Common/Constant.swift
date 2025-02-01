@@ -11,4 +11,8 @@ struct Constant {
     static var apiBaseURL: URL {
         FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
     }
+
+    static var jsonFileStorage: URL {
+        Constant.apiBaseURL.appendingPathComponent("events.json")
+    }
 }
