@@ -6,7 +6,7 @@ This is a simple event logger app to showcase some basic skills in native iOS de
 
 ## Description
 
-The core functionality of the app is to detect button presses on th Tap tab, log them in a database, and display the logs on the Logs tab.
+The core functionality of the app is to detect button presses on the Tap tab, log them in a database, and display the logs on the Logs tab.
 
 I initially thought of using CoreData for the database/storage solution, but since the data is only composed of a name and a timestamp property, I opted to using a simple json file instead. Thought it also fit the app more since it is a logging app.
 
